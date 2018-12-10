@@ -16,6 +16,9 @@ import org.testng.asserts.SoftAssert;
 import com.booking.SearchHotel.Objects.*;
 import com.booking.SearchHotel.Utils.GlobalVariable;
 
+import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class bookHotel {
 
 	WebDriver driver;
@@ -24,18 +27,17 @@ public class bookHotel {
 	@BeforeClass
 	public void launchBrowser() {
 
-		System.out.println("Open browser function");
-		System.out.println(GlobalVariable.browser);
+		System.out.println("Browser Name"+GlobalVariable.browser);
 		switch (GlobalVariable.browser) {
 
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", GlobalVariable.ChromedriverPath);
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			System.out.println("Chrome Launched");
 			break;
 
 		case "firefox":
-			System.setProperty("webdriver.gecko.driver", GlobalVariable.FirefoxdriverPath);
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			System.out.println("Firefox Launched");
 			break;
