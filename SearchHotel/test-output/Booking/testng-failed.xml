@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Booking]">
+  <parameter name="lName" value="upadhyay"/>
+  <parameter name="fName" value="Lavnya"/>
+  <parameter name="checkin_month" value="02"/>
+  <parameter name="checkout_month" value="2"/>
+  <parameter name="checkout_year" value="2019"/>
+  <parameter name="checkin_date" value="10"/>
+  <parameter name="placeName" value="Los Angeles, California, USA"/>
+  <parameter name="email" value="lavnyaup@gmail.com"/>
+  <parameter name="checkout_date" value="15"/>
+  <parameter name="checkin_year" value="2019"/>
   <test name="SearchHotel(failed)">
     <classes>
       <class name="com.booking.SearchHotel.TestCases.bookHotel">
         <methods>
           <include name="cleaUp"/>
-          <include name="bookAHotel"/>
+          <include name="bookAHotel" invocation-numbers="0"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- com.booking.SearchHotel.TestCases.bookHotel -->

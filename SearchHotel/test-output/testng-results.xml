@@ -2,24 +2,76 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50141" started-at="2018-12-09T02:24:20Z" finished-at="2018-12-09T02:25:10Z">
+  <suite name="Booking" duration-ms="32017" started-at="2018-12-10T22:35:07Z" finished-at="2018-12-10T22:35:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50141" started-at="2018-12-09T02:24:20Z" finished-at="2018-12-09T02:25:10Z">
+    <test name="SearchHotel" duration-ms="32017" started-at="2018-12-10T22:35:07Z" finished-at="2018-12-10T22:35:39Z">
       <class name="com.booking.SearchHotel.TestCases.bookHotel">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.booking.SearchHotel.TestCases.bookHotel@9629756]" name="launchBrowser" is-config="true" duration-ms="5548" started-at="2018-12-08T18:24:20Z" finished-at="2018-12-08T18:24:26Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.booking.SearchHotel.TestCases.bookHotel@62ee68d8]" name="launchBrowser" is-config="true" duration-ms="5408" started-at="2018-12-10T14:35:07Z" finished-at="2018-12-10T14:35:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="bookAHotel()[pri:0, instance:com.booking.SearchHotel.TestCases.bookHotel@9629756]" name="bookAHotel" duration-ms="44559" started-at="2018-12-08T18:24:26Z" finished-at="2018-12-08T18:25:10Z">
+        <test-method status="PASS" signature="bookAHotel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.booking.SearchHotel.TestCases.bookHotel@62ee68d8]" name="bookAHotel" duration-ms="26321" started-at="2018-12-10T14:35:12Z" finished-at="2018-12-10T14:35:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Los Angeles, California, USA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lavnya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[upadhyay]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[lavnyaup@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[02]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2019]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[2019]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookAHotel -->
-        <test-method status="PASS" signature="cleaUp()[pri:0, instance:com.booking.SearchHotel.TestCases.bookHotel@9629756]" name="cleaUp" is-config="true" duration-ms="1" started-at="2018-12-08T18:25:10Z" finished-at="2018-12-08T18:25:10Z">
+        <test-method status="PASS" signature="cleaUp()[pri:0, instance:com.booking.SearchHotel.TestCases.bookHotel@62ee68d8]" name="cleaUp" is-config="true" duration-ms="265" started-at="2018-12-10T14:35:39Z" finished-at="2018-12-10T14:35:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleaUp -->
       </class> <!-- com.booking.SearchHotel.TestCases.bookHotel -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- SearchHotel -->
+  </suite> <!-- Booking -->
 </testng-results>

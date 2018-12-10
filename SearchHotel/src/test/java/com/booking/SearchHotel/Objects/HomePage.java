@@ -2,13 +2,11 @@ package com.booking.SearchHotel.Objects;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.jmx.LoggerDynamicMBean;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
@@ -30,7 +28,7 @@ public class HomePage {
 	@FindBy(id = "ss")
 	WebElement input_searchBox;
 
-	@FindBys(@FindBy(xpath = "//ul[@role='listbox']//li/descendant::div[@class='sb-autocomplete__item-fl-title']"))
+	@FindBys(@FindBy(xpath = "//ul[@role='listbox']/descendant::li[@role='option']"))
 	List<WebElement> list_hotels;
 
 	@FindBy(xpath = "//input[@name='checkin_month']")
@@ -72,8 +70,10 @@ public class HomePage {
 	}
 
 	public void selectLocation(String placeName) {
+		System.out.println("Enter in location");
 
 		for (WebElement element : list_hotels) {
+			System.out.println("Enter in list");
 			System.out.println(element);
 			if (element.getAttribute("innerText").contains(placeName)) {
 				element.click();

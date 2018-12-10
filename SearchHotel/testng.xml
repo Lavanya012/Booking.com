@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Booking" verbose="1" >
+<parameter name="placeName" value="Los Angeles, California, USA"/>
+<parameter name="fName" value="Lavnya"/>
+<parameter name="lName" value="upadhyay"/>
+<parameter name="email" value="lavnyaup@gmail.com"/>
+<parameter name="checkin_month" value="02"/>
+<parameter name="checkin_date" value="10"/>
+<parameter name="checkin_year" value="2019"/>
+<parameter name="checkout_month" value="2"/>
+<parameter name="checkout_date" value="15"/>
+<parameter name="checkout_year" value="2019"/>
   <test name="SearchHotel">
     <classes>
        <class name="com.booking.SearchHotel.TestCases.bookHotel" />
